@@ -7,7 +7,7 @@ const routes =[
         path: '/' ,
         name: 'login',
         component:'login'
-    }
+    },
 
     {
         path: '/signup' ,
@@ -15,3 +15,10 @@ const routes =[
         component:'signup'
     }
 ]
+
+const router =createRouter({
+    history: createwebHistory(),
+    routes
+})
+
+export default router
