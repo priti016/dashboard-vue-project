@@ -18,6 +18,16 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 
+export default {
+  name: 'Login',
+  data() {
+    return {
+      username: '',
+      password: ''
+    };
+  }
+};
+
 const router = useRouter();
 
 // Reactive variables for form inputs
@@ -27,7 +37,7 @@ const password = ref("");
 
 const handleLogin = async () => {
   try {
-    const response = await axios.post("https://example.com/api/login", {
+    const response = await axios.post("https://localhost:8080/api/login", {
       username: username.value,
       email: email.value,
       password: password.value
