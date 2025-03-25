@@ -14,9 +14,16 @@
   import { ref } from "vue";
   import axios from "axios";
 import { useRouter } from "vue-router";
-  
-  const username = ref("");
-  const email = ref("");
-  const password = ref("");
+
+export default {
+  name: 'Signup',
+  data() {
+    return {
+      username: '',
+      email:'',
+      password: ''
+    };
+  }
+};
   </script>
   
