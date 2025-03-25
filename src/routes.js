@@ -1,23 +1,22 @@
-import { createRouter,createwebHistory } from 'vue-router'
-import login from './src/components/login.vue'
-import signup from './src/components/signup.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import login from './components/login.vue'
+import signup from './components/signup.vue'
 
-const routes =[
+const routes = [
     {
-        path: '/' ,
+        path: '/',
         name: 'login',
-        component:'login'
+        component: login
     },
-
     {
-        path: '/signup' ,
+        path: '/signup',
         name: 'signup',
-        component:'signup'
+        component: signup
     }
 ]
 
-const router =createRouter({
-    history: createwebHistory(),
+const router = createRouter({
+    history: createWebHistory(),
     routes
 })
 

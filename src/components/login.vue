@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import router from "@/routes";
-</script>
+
 
 <template>
   <div class="auth-container">
@@ -8,7 +6,7 @@ import router from "@/routes";
     <form @submit.prevent="handleLogin">
       <input v-model="username" type="text" placeholder="username" required />
       <input v-model="email" type="email" placeholder="Email" required />
-      <input v-model="password"type="password" placeholder="Password" required />
+      <input v-model="password" type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
     <router-link to="/signup">Don't have an Account? Sign up</router-link>
