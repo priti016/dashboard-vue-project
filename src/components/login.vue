@@ -3,7 +3,7 @@
 <template>
   <div class="auth-container">
     <h1>Login</h1>
-    <form @submit.prevent="handleLogin">
+    <form @submit.prevent="">
       <input v-model="username" type="text" placeholder="username" required />
       <input v-model="email" type="email" placeholder="Email" required />
       <input v-model="password" type="password" placeholder="Password" required />
