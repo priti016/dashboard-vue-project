@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="auth-container">
     <h1>Login</h1>
@@ -23,6 +21,7 @@ export default {
   data() {
     return {
       username: '',
+      email:'',
       password: ''
     };
   }
@@ -52,3 +51,51 @@ const handleLogin = async () => {
   }
 };
 </script>
+
+<style scoped>
+.auth-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  display: block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
+
